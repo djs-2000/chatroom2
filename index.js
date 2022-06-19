@@ -1,5 +1,5 @@
 function submit_button() {
-    console.log("you are logged in")
+    console.log("you are totally logged in. Totally")
 }
 
 
