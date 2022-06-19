@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Chat Room V2</title>
+ <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<div id="messages">
+</div>
+<input id="myInput" placeholder="Message this channel">
+<!-- <button id="myBtn" onclick="addMessage()">Send</button> -->
+<button id="myBtn" onclick="addMessage()"></button>
+
+
+<script>
+function addMessage() {
+    document.getElementById("messages").innerHTML += `<p>${document.getElementById('myInput').value}</p>`;
+    document.getElementById('myInput').value = null;
+};
+var input = document.getElementById("myInput");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+});
+
+</script>
+</body>
+</html>

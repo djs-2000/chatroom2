@@ -1,0 +1,4 @@
+-chat box
+-enter button
+-add image
+-dark mode by DEFAULT
