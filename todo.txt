@@ -1,7 +1,11 @@
 -chat box
 -enter button
 -add image
+<<<<<<< HEAD
 -dark mode by DEFAULT
 -get inputted email(done), then check if the email is in db(done), if yes, check password and username, if no, prompt user to sign up
 if sign up, add both to the db
 -homework is create html/ maybe css for create account page
+=======
+-dark mode by DEFAULT
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7

@@ -9,7 +9,13 @@
 <div id="messages">
 </div>
 <input id="myInput" placeholder="Message this channel">
+<<<<<<< HEAD
 <button id="myBtn" onclick="addMessage()"><image src="enter-button.png"></button>
+=======
+<!-- <button id="myBtn" onclick="addMessage()">Send</button> -->
+<button id="myBtn" onclick="addMessage()"></button>
+
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
 
 <script>
 function addMessage() {
@@ -20,7 +26,11 @@ var input = document.getElementById("myInput");
 input.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
    event.preventDefault();
+<<<<<<< HEAD
    document.getElementById("myBtn").click()
+=======
+   document.getElementById("myBtn").click();
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
   }
 });
 

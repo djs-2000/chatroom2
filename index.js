@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 //function submit_button() {
 //     console.log("you are logged in")
 // }
+=======
+function submit_button() {
+    console.log("you are totally logged in. Totally")
+}
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
 
 
 
@@ -10,7 +16,11 @@ const http = require(`http`)
 const socketio = require(`socket.io`)
 
 const app = express()
+<<<<<<< HEAD
 const PORT = 1111 //|| process.env.PORT
+=======
+const PORT = 1111 || process.env.PORT
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
 const server = http.createServer(app)
 const io = socketio(server)
 
@@ -88,4 +98,8 @@ app.post('/', function (req, res)
 })
 
 // app.listen(PORT, () => console.log(`App is live on port ${PORT}`))
+<<<<<<< HEAD
 app.listen(PORT, () => console.log(`App is live on port ${PORT}`))
+=======
+app.listen(PORT, () => console.log(`App is live on port ${PORT}`))
+>>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
