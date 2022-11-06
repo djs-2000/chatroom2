@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+
+    <style>
+        h1 {
+            font-size: 200%;
+        }
+    </style>
+    <h1>Sign Up</h1>
+
+    <form action="" id="form">
+        <div class="container">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter email address..." />
+
+        </div>
+
+        <div class="container">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter username..." required />
+        </div>
+
+        <div class="container">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" placeholder="Enter password..." required>
+
+            <button type="submit" class="btn" id="signupbtn" onclick="submit()">Sign Up</button>
+
+
+        </div>
+    </form>
+    <script>
+        function gotochat() {
+            window.location.href = "index.html";
+        }
+
+        function readTextFile(file, callback) {
+            var rawFile = new XMLHttpRequest();
+            rawFile.overrideMimeType("application/json");
+            rawFile.open("GET", file, true);
+            rawFile.onreadystatechange = function () {
+                if (rawFile.readyState === 4 && rawFile.status == "200") {
+                    callback(rawFile.responseText);
+                }
+            }
+            rawFile.send(null);
+        }
+        function writeInfo(emailAddress, username, password, file) {
+
+
+            readTextFile(file, function (text) {
+                var data = JSON.parse(text);
+                data.push({
+                    emailAddress: [
+                        username,
+                        password
+                    ]
+                });
+                console.log(data)
+                var stringifiedData = JSON.stringify(data)
+            })
+
+
+        }
+        function writeTextFile(data, file) {
+
+            file.JSON.writeInfo(document.getElementById("emailAddress"), "database.json")
+        }
+        function submit() {
+            writeInfo(
+                document.getElementById("form").elements["emailAddress"].value,
+                document.getElementById("form").elements["username"].value,
+                document.getElementById("form").elements["password"].value,
+                "database.json"
+            );
+            gotochat();
+        }
+    </script>
+
+</body>
+
+</html>

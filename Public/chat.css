@@ -1,0 +1,11 @@
+body {
+    background-color:#3e3e3e;
+    color: #ffffff;
+    }
+
+button{
+background-image: url(/enter-button.png);
+background-repeat: no-repeat;
+background-position: 50% 100%;
+background-size: cover;
+}
