@@ -8,6 +8,7 @@ const express = require(`express`)
 const path = require(`path`)
 const http = require(`http`)
 const socketio = require(`socket.io`)
+const fs = require('fs')
 
 const app = express()
 const PORT = 1111 //|| process.env.PORT
@@ -71,7 +72,11 @@ io.on(`connection`, socket =>
 
 
 
-
+function writeToFile(data, file) {
+    fs.writeFile(file, data, null, function () {
+        console.log(`writing to file: ${file}`);
+    })
+}
 
 
 
