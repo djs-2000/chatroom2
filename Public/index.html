@@ -7,10 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>chat room V2</title>
-<<<<<<< HEAD
     <link rel="shortcut icon" href="#">
-=======
->>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
 
 </head>
 
@@ -22,7 +19,6 @@
             <br>
             </header>
             <main class="join-main">
-<<<<<<< HEAD
                 <form action="" id="form" >
                     <div class="form-control">
                         <label for="email">Email Address</label>
@@ -100,57 +96,6 @@
 
                             </script>
                         </div>
-=======
-                <form action="chat.html">
-                    <div class="form-control">
-                        <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email" placeholder="Enter email address..." />
-                    </div>
-
-                    <div class="form-control">
-                        <label for="username">Username</label>
-                        <input type="text" name="username" id="username" placeholder="Enter username..." required />
-                    </div>
-                    <div>
-                        <div class="form-control">
-                            <label for="password">Password</label>
-                            <input type="text" name="password" id="password" placeholder="Enter password..." required>
-
-                            <script>
-                                document.getElementById("email").innerHTML
-
-                                var InnerHTMLforEmail = (document.getElementById("email").innerHTML)
-                                var InnerHTMLforPassword = (document.getElementById("password").innerHTML)
-                                var InnerHTMLforUsername = (document.getElementById("username").innerHTML)
-
-
-
-
-                
-         function readTextFile(file, callback) {
-                                        var rawFile = new XMLHttpRequest();
-                                        rawFile.overrideMimeType("application/json");
-                                        rawFile.open("GET", file, true);
-                                        rawFile.onreadystatechange = function () {
-                                            if (rawFile.readyState === 4 && rawFile.status == "200") {
-                                                callback(rawFile.responseText);
-                                            }
-                                        }
-                                        rawFile.send(null);
-                                    }
-
-
-                                readTextFile("/Public/database.json", function (text) {
-                                    var data = JSON.parse(text);
-                                    console.log(data);
-                                
-                                if (data === InnerHTMLforEmail);
-                                });             
-                            
-                            
-                            </script>          
-                    </div>
->>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
                         <div class="form-control">
                             <label for="room">Chat Channel</label>
                             <select name="room" id="room">
@@ -161,11 +106,7 @@
                             </select>
                         </div>
                         <div class="flex">
-<<<<<<< HEAD
                             <button type="submit" class="btn" onclick="reader()">Login to Chat</button>
-=======
-                            <button type="submit" class="btn">Login to Chat</button>
->>>>>>> b9b1758df0323688cd776fce1b5c7c885e47a2a7
                         </div>
                 </form>
             </main>
